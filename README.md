@@ -1,14 +1,24 @@
-# 🌐 Awesome-Multimodal-Datasets [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# 🌐 Awesome Multimodal Datasets 
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+![Stars](https://img.shields.io/github/stars/KaecoHappy/Awesome-Multimodal-Datasets?style=flat-square)
+> 📦 A curated, up-to-date collection of high-quality multimodal datasets, covering **Image**, **Video**, **3D**, **Text**, **Audio**, **Sensor**, etc.  
 
-A curated list of high-quality multimodal datasets for AI research.  
-> Modalities: Image, Video, 3D, Text, Audio, Sensor, etc.  
+A one-stop hub for multimodal AI datasets 🚀 Always updating, contributions welcome!
 
-📣 **Always Updating** – new datasets & PRs welcome!  
-If this repo helps you, **⭐ Star it** or **🤝 contribute** so the community keeps growing.
+## 🌟 Introduction
+Multimodal datasets are essential for advancing AI systems that integrate vision, language, speech, and other modalities. This repository organizes and categorizes the most important multimodal datasets to help
+
+- 📊 Researchers: Quickly locate benchmark datasets for multimodal learning
+
+- 🧑‍🏫 Educators: Use as a resource for multimodal AI courses and teaching
+
+- 🚀 Beginners: Explore multimodal datasets across different domains in one place
+
+- 🔍 Practitioners: Compare dataset scales, modality combinations, and scenarios
 
 ---
 
-## 📚 Table of Contents
+## 📚 Categories
 * [1 Training-Specific Datasets](#1-training-specific-datasets)  
   * [1.1 Image-Text](#11-image-text)  
   * [1.2 Video-Text](#12-video-text)  
@@ -207,8 +217,27 @@ Pull requests, issues, and suggestions are always welcome!
 > Our starting taxonomy borrows from the framework in arXiv:2412.17759.  
 > If the field moves faster than we do (it will!), help us keep this list fresh.
 
+🤝 Contributing
+
+Contributions are welcome!
+
+Add new datasets via Pull Requests.
+
+Ensure consistent formatting.
+
+Tag datasets with modality + task labels.
+
+## 📌 Citation
+
+If you find this repository useful, please consider citing it:
+```
+@misc{awesome-multimodal-datasets,
+  title  = {Awesome Multimodal Datasets},
+  author = {KaecoHappy},
+  year   = {2025},
+  url    = {https://github.com/KaecoHappy/Awesome-Multimodal-Datasets}
+}
+```
 ## 📝 License
 
 This project is licensed under the [Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/), which allows for non-commercial use, sharing, and adaptation.
-
-For commercial use, please contact the author for permission.
