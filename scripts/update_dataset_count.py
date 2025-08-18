@@ -1,17 +1,25 @@
-import requests
-from bs4 import BeautifulSoup
+import re
 
-# 获取 README 文件内容
-url = 'https://github.com/KaikoGit/Awesome-Multimodal-Datasets'
-response = requests.get(url)
-soup = BeautifulSoup(response.text, 'html.parser')
+# 读取 README 文件
+with open("README.md", "r", encoding="utf-8") as f:
+    content = f.read()
 
-# 提取所有链接
-links = soup.find_all('a', href=True)
+# 去掉 Other Resources 之后的部分
+content = re.split(r'## 🌐 Other Resources', content)[0]
 
-# 过滤出数据集链接
-dataset_links = [link['href'] for link in links if 'dataset' in link['href'].lower()]
+# 匹配 Markdown 表格的每行第一列数据集名称
+datasets = []
+for line in content.splitlines():
+    # 跳过表头和分隔线
+    if line.strip().startswith("|") and not re.match(r"\|\s*-+", line):
+        cols = line.split("|")
+        if len(cols) > 1:
+            name = cols[1].strip()
+            # 去掉 []() 链接
+            name = re.sub(r"\[([^\]]+)\]\([^\)]+\)", r"\1", name)
+            if name:
+                datasets.append(name)
 
-# 去重并统计数量
-unique_datasets = set(dataset_links)
-print(f"README 中提到的数据集数量：{len(unique_datasets)}")
+# 去重
+datasets = list(dict.fromkeys(datasets))
+print(f"Total datasets: {len(datasets)}")
