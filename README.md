@@ -1,7 +1,7 @@
 # 🌐 Awesome Multimodal Datasets 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 ![Stars](https://img.shields.io/github/stars/KaecoHappy/Awesome-Multimodal-Datasets?style=flat-square)
-![Datasets](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/KaikoGit/Awesome-Multimodal-Datasets/main/scripts/dataset_count.json)
+![Total Datasets](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/KaikoGit/Awesome-Multimodal-Datasets/main/scripts/dataset_count.json)
 
 > 📦 A curated, up-to-date collection of high-quality multimodal datasets, covering **Image**, **Video**, **3D**, **Text**, **Audio**, **Sensor**, etc.  
 

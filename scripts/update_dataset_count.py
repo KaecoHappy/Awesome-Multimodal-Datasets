@@ -1,17 +1,17 @@
-import re
-import json
+import requests
+from bs4 import BeautifulSoup
 
-with open("README.md", "r", encoding="utf-8") as f:
-    content = f.read()
+# 获取 README 文件内容
+url = 'https://github.com/KaikoGit/Awesome-Multimodal-Datasets'
+response = requests.get(url)
+soup = BeautifulSoup(response.text, 'html.parser')
 
-dataset_count = len(re.findall(r"^\s*[-*]\s+.+", content, re.MULTILINE))
+# 提取所有链接
+links = soup.find_all('a', href=True)
 
-data = {
-    "schemaVersion": 1,
-    "label": "datasets",
-    "message": str(dataset_count),
-    "color": "blue"
-}
+# 过滤出数据集链接
+dataset_links = [link['href'] for link in links if 'dataset' in link['href'].lower()]
 
-with open("dataset_count.json", "w", encoding="utf-8") as f:
-    json.dump(data, f)
+# 去重并统计数量
+unique_datasets = set(dataset_links)
+print(f"README 中提到的数据集数量：{len(unique_datasets)}")
