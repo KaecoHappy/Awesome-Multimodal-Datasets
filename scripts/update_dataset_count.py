@@ -30,7 +30,7 @@ badge_json = {
     "schemaVersion": 1,
     "label": "Total Datasets",
     "message": str(dataset_count),
-    "color": "blue"
+    "color": "green"
 }
 
 with open("scripts/dataset_count.json", "w", encoding="utf-8") as f:

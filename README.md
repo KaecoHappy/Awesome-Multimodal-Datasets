@@ -213,21 +213,14 @@ NeurIPS 2021 one-stop benchmark & toolkit for multimodal model evaluation and de
 
 ## 🤝 Contributing
 
-Found a cool dataset we missed? Want to add a new tag or category?  
-Pull requests, issues, and suggestions are always welcome!
-
-> Our starting taxonomy borrows from the framework in arXiv:2412.17759.  
-> If the field moves faster than we do (it will!), help us keep this list fresh.
-
-🤝 Contributing
-
 Contributions are welcome!
 
 Add new datasets via Pull Requests.
 
 Ensure consistent formatting.
 
-Tag datasets with modality + task labels.
+> Our starting taxonomy borrows from the framework in arXiv:2412.17759.  
+> If the field moves faster than we do (it will!), help us keep this list fresh.
 
 ## 📌 Citation
 
