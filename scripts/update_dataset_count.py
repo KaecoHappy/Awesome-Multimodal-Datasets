@@ -1,4 +1,5 @@
 import re
+import json
 
 # 读取 README 文件
 with open("README.md", "r", encoding="utf-8") as f:
@@ -22,4 +23,15 @@ for line in content.splitlines():
 
 # 去重
 datasets = list(dict.fromkeys(datasets))
-print(f"Total datasets: {len(datasets)}")
+dataset_count = len(datasets)
+
+# 输出到 JSON，用于 Shields.io 徽章
+badge_json = {
+    "schemaVersion": 1,
+    "label": "Total Datasets",
+    "message": str(dataset_count),
+    "color": "blue"
+}
+
+with open("scripts/dataset_count.json", "w", encoding="utf-8") as f:
+    json.dump(badge_json, f, ensure_ascii=False, indent=2)
